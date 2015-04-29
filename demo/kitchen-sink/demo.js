@@ -476,6 +476,10 @@ bindCheckbox("scrollPastEnd", function(checked) {
     env.editor.setOption("scrollPastEnd", checked);
 });
 
+bindCheckbox("enableLiveAutocompletion", function(checked) {
+    env.editor.setOption("enableLiveAutocompletion", checked);
+});
+
 bindDropdown("split", function(value) {
     var sp = env.split;
     if (value == "none") {
@@ -575,7 +579,7 @@ env.editSnippets = function() {
 require("ace/ext/language_tools");
 env.editor.setOptions({
     enableBasicAutocompletion: true,
-    enableLiveAutocompletion: false,
+    enableLiveAutocompletion: true,
     enableSnippets: true
 });
 
