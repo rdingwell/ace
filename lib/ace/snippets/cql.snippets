@@ -1,0 +1,237 @@
+snippet using
+	using ${1:model} version ${2:version}
+snippet inc 
+	include ${1:library} version '${2:version}' called ${3:indentifier}
+snippet lib
+	library ${1:name} version '${2:version}'
+snippet vset 
+	valueset ${1:identifier} ':' ${2:valueset_id} version ${3:version}
+snippet param
+	parameter ${1:identifier} (${2:type}) default ${3:expression}
+snippet fun
+	define function ${1:name} (${2}) : ${3:body}
+snippet opt
+	${1:name} ${2:type}
+
+snippet ret
+	[${1:type} ${2}] ${3}
+snippet ret_path
+	: ${1: path} ${2: in} ${3: valueset}
+snippet with
+	with ${1:identifier} ${2:alias} such that ${3: expression}
+snippet without
+	without ${1:identifier} ${2:alias} such that ${3: expression}
+snippet def
+	define ${1:public|private} ${2: identifier} : ${3:expression}
+
+snippet And:
+	And(${1}, ${2})
+snippet Or
+	Or(${1}, ${2})
+snippet Not
+	Not(${1})
+snippet Null
+	Null()
+snippet IsNull:
+	IsNull(${1})
+snippet IfNull
+	IfNull(${1}, ${2})
+snippet Coalesce
+	Coalesce(${1}, ${2})
+snippet Equal
+	Equal(${1}, ${2})
+snippet NotEqual
+	NotEqual(${1}, ${2})
+snippet Less
+	Less(${1}, ${2})
+snippet LessOrEqual
+	LessOrEqual(${1}, ${2})
+snippet Greater
+	Greater(${1}, ${2})
+snippet GreaterOrEqual
+	GreaterOrEqual(${1}, ${2})
+snippet Add
+	Add(${1}, ${2})
+snippet Subtract
+	Subtract(${1}, ${2})
+snippet Multiply
+	Multiply(${1}, ${2})
+snippet Divide
+	Divide(${1}, ${2})
+snippet TruncatedDivide
+	TruncatedDivide(${1}, ${2})
+snippet Modulo
+	Modulo(${1}, ${2})
+snippet Ceiling
+	Ceiling(${1})
+snippet Floor
+	Floor(${1})
+snippet Truncate
+	Truncate(${1})
+snippet Abs
+	Abs(${1})
+snippet Negate
+	Negate(${1})
+snippet Round
+	Round(${1})
+snippet Ln
+	Ln(${1})
+snippet Log
+	Log(${1}, ${2})
+snippet Power
+	Power(${1}, ${2})
+snippet Succ
+	Succ(${1})
+snippet Pred
+	Pred(${1})
+snippet MinValue
+	MinValue(${1})
+snippet MaxValue
+	MaxValue(${1})
+snippet DateAdd
+	DateAdd(${1})
+snippet DateDiff
+	DateDiff(${1}, ${2})
+snippet DatePart
+	DatePart(${1}, ${2})
+snippet Today
+	Today(${1})
+snippet Now
+	Now(${1})
+snippet Date
+	Date(${1})
+snippet DateOf
+	DateOf(${1})
+snippet TimeOf
+	TimeOf(${1})
+snippet Concat
+	Concat(${1})
+snippet Combine
+	Combine(${1}, ${2})
+snippet Split
+	Split(${1}, ${2})
+snippet Length
+	Length(${1})
+snippet Upper
+	Upper(${1})
+snippet Lower
+	Lower(${1})
+snippet Indexer
+	Indexer(${1})
+snippet Pos
+	Pos(${1}, ${2})
+snippet Substring
+	Substring(${1}, ${2})
+snippet Equal
+	Equal(${1}, ${2})
+snippet NotEqual
+	NotEqual(${1}, ${2})
+snippet Contains
+	Contains(${1}, ${2})
+snippet In
+	In(${1}, ${2})
+snippet Includes
+	Includes(${1}, ${2})
+snippet IncludedIn
+	IncludedIn(${1}, ${2})
+snippet ProperIncludes
+	ProperIncludes(${1}, ${2})
+snippet ProperIncludedIn
+	ProperIncludedIn(${1}, ${2})
+snippet Before
+	Before(${1}, ${2})
+snippet After
+	After(${1}, ${2})
+snippet Meets
+	Meets(${1}, ${2})
+snippet Overlaps
+	Overlaps(${1}, ${2})
+snippet OverlapsBefore
+	OverlapsBefore(${1}, ${2})
+snippet OverlapsAfter
+	OverlapsAfter(${1}, ${2})
+snippet Union
+	Union(${1}, ${2})
+snippet Intersect
+	Intersect(${1}, ${2})
+snippet Difference
+	Difference(${1}, ${2})
+snippet Length
+	Length(${1})
+snippet Begin
+	Begin(${1})
+snippet End
+	End(${1})
+snippet Begins
+	Begins(${1}, ${2})
+snippet Ends
+	Ends(${1}, ${2})
+snippet List
+	List(${1}, ${2})
+snippet IsEmpty
+	IsEmpty(${1})
+snippet IsNotEmpty
+	IsNotEmpty(${1})
+snippet Equal
+	Equal(${1}, ${2})
+snippet NotEqual
+	NotEqual(${1}, ${2})
+snippet Union
+	Union(${1}, ${2})
+snippet Difference
+	Difference(${1}, ${2})
+snippet Intersect
+	Intersect(${1}, ${2})
+snippet Filter
+	Filter(${1}, ${2})
+snippet IndexOf
+	IndexOf(${1}, ${2})
+snippet Indexer
+	Indexer(${1}, ${2})
+snippet In
+	In(${1}, ${2})
+snippet Contains
+	Contains(${1}, ${2})
+snippet Includes
+	Includes(${1}, ${2})
+snippet IncludedIn
+	IncludedIn(${1}, ${2})
+snippet ProperIncludes
+	ProperIncludes(${1}, ${2})
+snippet ProperIncludedIn
+	ProperIncludedIn(${1}, ${2})
+snippet Sort
+	Sort(${1}, ${2})
+snippet Expand
+	Expand(${1})
+snippet Distinct
+	Distinct(${1})
+snippet Current
+	Current(${1})
+snippet Count
+	Count(${1})
+snippet Sum
+	Sum(${1})
+snippet Min
+	Min(${1})
+snippet Max
+	Max(${1})
+snippet Avg
+	Avg(${1})
+snippet Median
+	Median(${1})
+snippet Mode
+	Mode(${1})
+snippet Variance
+	Variance(${1})
+snippet PopulationVariance
+	PopulationVariance(${1})
+snippet StdDev
+	StdDev(${1})
+snippet PopulationStdDev
+	PopulationStdDev(${1})
+snippet AllTrue
+	AllTrue(${1}, ${2})
+snippet AnyTrue
+	AnyTrue(${1}, ${2})
+	
